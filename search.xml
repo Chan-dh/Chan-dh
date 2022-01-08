@@ -23,6 +23,30 @@
       </tags>
   </entry>
   <entry>
+    <title>python list与string的相互转换</title>
+    <url>/2022/01/07/python-list%E4%B8%8Estring%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/</url>
+    <content><![CDATA[<h2 id="list-–-gt-string"><a href="#list-–-gt-string" class="headerlink" title="list –&gt; string"></a>list –&gt; string</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">list_  = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"></span><br><span class="line">str_1 = <span class="string">&quot;&quot;</span>.join(list_)</span><br><span class="line">str_2 = <span class="string">&quot;.&quot;</span>.join(list_)</span><br><span class="line">str_2 = <span class="string">&quot; &quot;</span>.join(list_)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(str_1, str_2, str_3)</span><br></pre></td></tr></table></figure>
+<p>运行结果：</p>
+<blockquote>
+<p>“12345”, “1.2.3.4.5”, “1 2 3 4 5”</p>
+</blockquote>
+<h2 id="string-–-gt-list"><a href="#string-–-gt-list" class="headerlink" title="string –&gt; list"></a>string –&gt; list</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">str1 = <span class="string">&quot;1234&quot;</span></span><br><span class="line">list1 = <span class="built_in">list</span>(str1)</span><br><span class="line"><span class="built_in">print</span>(list1)</span><br><span class="line"></span><br><span class="line">str2 = <span class="string">&quot;wo shi sha bi!&quot;</span></span><br><span class="line">list2 = <span class="built_in">list</span>(str2)</span><br><span class="line"><span class="built_in">print</span>(list2)</span><br></pre></td></tr></table></figure>
+<p>运行结果：</p>
+<blockquote>
+<p>[“1”, “2”, “3”, “4”, “5”]</p>
+</blockquote>
+<blockquote>
+<p>[“wo”, “shi”, “sha”, “bi”]</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LeetCode每日一题-1.2</title>
     <url>/2022/01/02/LeetCode%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%981-2/</url>
     <content><![CDATA[<h2 id="LeetCode-390-消除数字"><a href="#LeetCode-390-消除数字" class="headerlink" title="LeetCode - 390.消除数字"></a>LeetCode - 390.消除数字</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">         _______________________________________________        </span><br><span class="line">        |   _      __        __                         |       </span><br><span class="line">________|  | | /| / / ___   / / ____ ___   __ _  ___    |_______</span><br><span class="line">\       |  | |/ |/ / / -_) / / / __// _ \ /  &#x27; \/ -_)   |      /</span><br><span class="line"> \      |  |__/|__/  \__/ /_/  \__/ \___//_/_/_/\__/    |     / </span><br><span class="line"> /      |_______________________________________________|     \ </span><br><span class="line">/__________)                                        (__________\</span><br></pre></td></tr></table></figure>
@@ -61,6 +85,11 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2021/12/30/hello-world/</url>
+    <content><![CDATA[<h1 id="Welcome-to-Chan-DH’s-Blog"><a href="#Welcome-to-Chan-DH’s-Blog" class="headerlink" title="Welcome to Chan DH’s Blog"></a>Welcome to Chan DH’s Blog</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">         _______________________________________________        </span><br><span class="line">        |   _      __        __                         |       </span><br><span class="line">________|  | | /| / / ___   / / ____ ___   __ _  ___    |_______</span><br><span class="line">\       |  | |/ |/ / / -_) / / / __// _ \ /  &#x27; \/ -_)   |      /</span><br><span class="line"> \      |  |__/|__/  \__/ /_/  \__/ \___//_/_/_/\__/    |     / </span><br><span class="line"> /      |_______________________________________________|     \ </span><br><span class="line">/__________)                                        (__________\</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
     <title>LeetCode每日一题-1.3</title>
     <url>/2022/01/03/LeetCode%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%981-3/</url>
     <content><![CDATA[<h2 id="LeetCode-1185-一周中的第几天"><a href="#LeetCode-1185-一周中的第几天" class="headerlink" title="LeetCode - 1185.一周中的第几天"></a>LeetCode - 1185.一周中的第几天</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">         _______________________________________________        </span><br><span class="line">        |   _      __        __                         |       </span><br><span class="line">________|  | | /| / / ___   / / ____ ___   __ _  ___    |_______</span><br><span class="line">\       |  | |/ |/ / / -_) / / / __// _ \ /  &#x27; \/ -_)   |      /</span><br><span class="line"> \      |  |__/|__/  \__/ /_/  \__/ \___//_/_/_/\__/    |     / </span><br><span class="line"> /      |_______________________________________________|     \ </span><br><span class="line">/__________)                                        (__________\</span><br></pre></td></tr></table></figure>
@@ -90,32 +119,29 @@
       </tags>
   </entry>
   <entry>
-    <title>python list与string的相互转换</title>
-    <url>/2022/01/07/python-list%E4%B8%8Estring%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/</url>
-    <content><![CDATA[<h2 id="list-–-gt-string"><a href="#list-–-gt-string" class="headerlink" title="list –&gt; string"></a>list –&gt; string</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">list_  = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"></span><br><span class="line">str_1 = <span class="string">&quot;&quot;</span>.join(list_)</span><br><span class="line">str_2 = <span class="string">&quot;.&quot;</span>.join(list_)</span><br><span class="line">str_2 = <span class="string">&quot; &quot;</span>.join(list_)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(str_1, str_2, str_3)</span><br></pre></td></tr></table></figure>
-<p>运行结果：</p>
-<blockquote>
-<p>“12345”, “1.2.3.4.5”, “1 2 3 4 5”</p>
-</blockquote>
-<h2 id="string-–-gt-list"><a href="#string-–-gt-list" class="headerlink" title="string –&gt; list"></a>string –&gt; list</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">str1 = <span class="string">&quot;1234&quot;</span></span><br><span class="line">list1 = <span class="built_in">list</span>(str1)</span><br><span class="line"><span class="built_in">print</span>(list1)</span><br><span class="line"></span><br><span class="line">str2 = <span class="string">&quot;wo shi sha bi!&quot;</span></span><br><span class="line">list2 = <span class="built_in">list</span>(str2)</span><br><span class="line"><span class="built_in">print</span>(list2)</span><br></pre></td></tr></table></figure>
-<p>运行结果：</p>
-<blockquote>
-<p>[“1”, “2”, “3”, “4”, “5”]</p>
-</blockquote>
-<blockquote>
-<p>[“wo”, “shi”, “sha”, “bi”]</p>
-</blockquote>
+    <title>判断链表中是否存在环</title>
+    <url>/2022/01/08/%E5%88%A4%E6%96%AD%E9%93%BE%E8%A1%A8%E4%B8%AD%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E7%8E%AF/</url>
+    <content><![CDATA[<h1 id="LeetCode-141-环形链表"><a href="#LeetCode-141-环形链表" class="headerlink" title="LeetCode 141.环形链表"></a>LeetCode 141.环形链表</h1><h2 id="方法一：hash表"><a href="#方法一：hash表" class="headerlink" title="方法一：hash表"></a>方法一：hash表</h2><h3 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h3><p>遍历链表，遇到节点已经存在hash表，即表示存在环路，否者，添加进hash表。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"># class ListNode:</span></span><br><span class="line"><span class="comment">#     def __init__(self, x):</span></span><br><span class="line"><span class="comment">#         self.val = x</span></span><br><span class="line"><span class="comment">#         self.next = None</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">hasCycle</span>(<span class="params">self, head: <span class="type">Optional</span>[ListNode]</span>) -&gt; <span class="built_in">bool</span>:</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        p = head</span></span><br><span class="line"><span class="string">        while (p != None):</span></span><br><span class="line"><span class="string">            temp = p.val</span></span><br><span class="line"><span class="string">            q = head</span></span><br><span class="line"><span class="string">            while (q != p):</span></span><br><span class="line"><span class="string">                if (q.val == temp):</span></span><br><span class="line"><span class="string">                    return True</span></span><br><span class="line"><span class="string">        return False </span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        ans = <span class="built_in">set</span>()</span><br><span class="line">        p = head</span><br><span class="line">        <span class="keyword">while</span> (p != <span class="literal">None</span>) :</span><br><span class="line">            <span class="keyword">if</span> p <span class="keyword">in</span> ans :</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                ans.add(p)</span><br><span class="line">            p = p.<span class="built_in">next</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></table></figure>
+<h3 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h3><p><strong>时间复杂度：</strong> O(<em><strong>N</strong></em>),遍历整个链表</p>
+<p><strong>空间复杂度：</strong> O(<em><strong>N</strong></em>),使用了set数据结构，进行存储</p>
+<h2 id="方法二：快慢指针"><a href="#方法二：快慢指针" class="headerlink" title="方法二：快慢指针"></a>方法二：快慢指针</h2><h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p><strong>LeetCode</strong><br>「Floyd 判圈算法」（又称龟兔赛跑算法）:</p>
+<p>假想「乌龟」和「兔子」在链表上移动，「兔子」跑得快，「乌龟」跑得慢。当「乌龟」和「兔子」从链表上的同一个节点开始移动时，如果该链表中没有环，那么「兔子」将一直处于「乌龟」的前方；如果该链表中有环，那么「兔子」会先于「乌龟」进入环，并且一直在环内移动。等到「乌龟」进入环时，由于「兔子」的速度快，它一定会在某个时刻与乌龟相遇，即套了「乌龟」若干圈。</p>
+<p><strong>具体</strong>定义两个指针，一快一满。慢指针每次只移动一步，而快指针每次移动两步。初始时，慢指针在位置 head，而快指针在位置 head.next。这样一来，如果在移动的过程中，快指针反过来追上慢指针，就说明该链表为环形链表。否则快指针将到达链表尾部，该链表不为环形链表。</p>
+<h3 id="细节"><a href="#细节" class="headerlink" title="细节"></a>细节</h3><p>为什么我们要规定初始时慢指针在位置 head，快指针在位置 head.next，而不是两个指针都在位置 head（即与「乌龟」和「兔子」中的叙述相同）？</p>
+<p>观察下面的代码，我们使用的是 while 循环，循环条件先于循环体。由于循环条件一定是判断快慢指针是否重合，如果我们将两个指针初始都置于 head，那么 while 循环就不会执行。因此，我们可以假想一个在 head 之前的虚拟节点，慢指针从虚拟节点移动一步到达 head，快指针从虚拟节点移动两步到达 head.next，这样我们就可以使用 while 循环了。</p>
+<p>当然，我们也可以使用 do-while 循环。此时，我们就可以把快慢指针的初始值都置为 head。</p>
+<h3 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">hasCycle</span>(<span class="params">self, head: ListNode</span>) -&gt; <span class="built_in">bool</span>:</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> head <span class="keyword">or</span> <span class="keyword">not</span> head.<span class="built_in">next</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        </span><br><span class="line">        slow = head</span><br><span class="line">        fast = head.<span class="built_in">next</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> slow != fast:</span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">not</span> fast <span class="keyword">or</span> <span class="keyword">not</span> fast.<span class="built_in">next</span>: <span class="comment"># slow,fast 为 None，链表循环结束，不存在环路</span></span><br><span class="line">                <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">            slow = slow.<span class="built_in">next</span></span><br><span class="line">            fast = fast.<span class="built_in">next</span>.<span class="built_in">next</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="复杂度分析-1"><a href="#复杂度分析-1" class="headerlink" title="复杂度分析"></a>复杂度分析</h3><p><strong>时间复杂度：</strong> O(<em><strong>N</strong></em>)，循环遍历一次链表</p>
+<p><strong>空间复杂度：</strong> O(<em><strong>1</strong></em>)，没有使用额外的存储空间</p>
 ]]></content>
       <categories>
-        <category>python</category>
+        <category>LeetCode</category>
+        <category>数据结构与算法</category>
       </categories>
       <tags>
-        <tag>python</tag>
+        <tag>链表</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2021/12/30/hello-world/</url>
-    <content><![CDATA[<h1 id="Welcome-to-Chan-DH’s-Blog"><a href="#Welcome-to-Chan-DH’s-Blog" class="headerlink" title="Welcome to Chan DH’s Blog"></a>Welcome to Chan DH’s Blog</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">         _______________________________________________        </span><br><span class="line">        |   _      __        __                         |       </span><br><span class="line">________|  | | /| / / ___   / / ____ ___   __ _  ___    |_______</span><br><span class="line">\       |  | |/ |/ / / -_) / / / __// _ \ /  &#x27; \/ -_)   |      /</span><br><span class="line"> \      |  |__/|__/  \__/ /_/  \__/ \___//_/_/_/\__/    |     / </span><br><span class="line"> /      |_______________________________________________|     \ </span><br><span class="line">/__________)                                        (__________\</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
 </search>

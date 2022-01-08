@@ -131,7 +131,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -142,7 +142,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -179,6 +179,112 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://chan-dh.github.io/2022/01/08/%E5%88%A4%E6%96%AD%E9%93%BE%E8%A1%A8%E4%B8%AD%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E7%8E%AF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Chan DH">
+      <meta itemprop="description" content="与其临渊羡鱼，不如退而结网">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chan DH's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/01/08/%E5%88%A4%E6%96%AD%E9%93%BE%E8%A1%A8%E4%B8%AD%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E7%8E%AF/" class="post-title-link" itemprop="url">判断链表中是否存在环</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-01-08 11:49:45 / 修改时间：12:07:12" itemprop="dateCreated datePublished" datetime="2022-01-08T11:49:45+08:00">2022-01-08</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">数据结构与算法</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.5k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="LeetCode-141-环形链表"><a href="#LeetCode-141-环形链表" class="headerlink" title="LeetCode 141.环形链表"></a>LeetCode 141.环形链表</h1><h2 id="方法一：hash表"><a href="#方法一：hash表" class="headerlink" title="方法一：hash表"></a>方法一：hash表</h2><h3 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h3><p>遍历链表，遇到节点已经存在hash表，即表示存在环路，否者，添加进hash表。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"># class ListNode:</span></span><br><span class="line"><span class="comment">#     def __init__(self, x):</span></span><br><span class="line"><span class="comment">#         self.val = x</span></span><br><span class="line"><span class="comment">#         self.next = None</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">hasCycle</span>(<span class="params">self, head: <span class="type">Optional</span>[ListNode]</span>) -&gt; <span class="built_in">bool</span>:</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        p = head</span></span><br><span class="line"><span class="string">        while (p != None):</span></span><br><span class="line"><span class="string">            temp = p.val</span></span><br><span class="line"><span class="string">            q = head</span></span><br><span class="line"><span class="string">            while (q != p):</span></span><br><span class="line"><span class="string">                if (q.val == temp):</span></span><br><span class="line"><span class="string">                    return True</span></span><br><span class="line"><span class="string">        return False </span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        ans = <span class="built_in">set</span>()</span><br><span class="line">        p = head</span><br><span class="line">        <span class="keyword">while</span> (p != <span class="literal">None</span>) :</span><br><span class="line">            <span class="keyword">if</span> p <span class="keyword">in</span> ans :</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                ans.add(p)</span><br><span class="line">            p = p.<span class="built_in">next</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></table></figure>
+<h3 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h3><p><strong>时间复杂度：</strong> O(<em><strong>N</strong></em>),遍历整个链表</p>
+<p><strong>空间复杂度：</strong> O(<em><strong>N</strong></em>),使用了set数据结构，进行存储</p>
+<h2 id="方法二：快慢指针"><a href="#方法二：快慢指针" class="headerlink" title="方法二：快慢指针"></a>方法二：快慢指针</h2><h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p><strong>LeetCode</strong><br>「Floyd 判圈算法」（又称龟兔赛跑算法）:</p>
+<p>假想「乌龟」和「兔子」在链表上移动，「兔子」跑得快，「乌龟」跑得慢。当「乌龟」和「兔子」从链表上的同一个节点开始移动时，如果该链表中没有环，那么「兔子」将一直处于「乌龟」的前方；如果该链表中有环，那么「兔子」会先于「乌龟」进入环，并且一直在环内移动。等到「乌龟」进入环时，由于「兔子」的速度快，它一定会在某个时刻与乌龟相遇，即套了「乌龟」若干圈。</p>
+<p><strong>具体</strong>定义两个指针，一快一满。慢指针每次只移动一步，而快指针每次移动两步。初始时，慢指针在位置 head，而快指针在位置 head.next。这样一来，如果在移动的过程中，快指针反过来追上慢指针，就说明该链表为环形链表。否则快指针将到达链表尾部，该链表不为环形链表。</p>
+<h3 id="细节"><a href="#细节" class="headerlink" title="细节"></a>细节</h3><p>为什么我们要规定初始时慢指针在位置 head，快指针在位置 head.next，而不是两个指针都在位置 head（即与「乌龟」和「兔子」中的叙述相同）？</p>
+<p>观察下面的代码，我们使用的是 while 循环，循环条件先于循环体。由于循环条件一定是判断快慢指针是否重合，如果我们将两个指针初始都置于 head，那么 while 循环就不会执行。因此，我们可以假想一个在 head 之前的虚拟节点，慢指针从虚拟节点移动一步到达 head，快指针从虚拟节点移动两步到达 head.next，这样我们就可以使用 while 循环了。</p>
+<p>当然，我们也可以使用 do-while 循环。此时，我们就可以把快慢指针的初始值都置为 head。</p>
+<h3 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">hasCycle</span>(<span class="params">self, head: ListNode</span>) -&gt; <span class="built_in">bool</span>:</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> head <span class="keyword">or</span> <span class="keyword">not</span> head.<span class="built_in">next</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        </span><br><span class="line">        slow = head</span><br><span class="line">        fast = head.<span class="built_in">next</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> slow != fast:</span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">not</span> fast <span class="keyword">or</span> <span class="keyword">not</span> fast.<span class="built_in">next</span>: <span class="comment"># slow,fast 为 None，链表循环结束，不存在环路</span></span><br><span class="line">                <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">            slow = slow.<span class="built_in">next</span></span><br><span class="line">            fast = fast.<span class="built_in">next</span>.<span class="built_in">next</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="复杂度分析-1"><a href="#复杂度分析-1" class="headerlink" title="复杂度分析"></a>复杂度分析</h3><p><strong>时间复杂度：</strong> O(<em><strong>N</strong></em>)，循环遍历一次链表</p>
+<p><strong>空间复杂度：</strong> O(<em><strong>1</strong></em>)，没有使用额外的存储空间</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -706,14 +812,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">4k</span>
+    <span title="站点总字数">5k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">3 分钟</span>
+    <span title="站点阅读时长">5 分钟</span>
   </span>
 </div>
 
