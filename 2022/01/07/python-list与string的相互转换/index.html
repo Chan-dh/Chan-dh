@@ -20,15 +20,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"chan-dh.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.8.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="list –&gt; string1234567list_  &#x3D; [1,2,3,4,5]str_1 &#x3D; &quot;&quot;.join(list_)str_2 &#x3D; &quot;.&quot;.join(list_)str_2 &#x3D; &quot; &quot;.join(list_)print(str_1, str_2, str_3) 运行结果：  “12345”, “1.2.3.4.5”, “1">
+<meta name="description" content="list –&gt; string">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python list与string的相互转换">
 <meta property="og:url" content="https://chan-dh.github.io/2022/01/07/python-list%E4%B8%8Estring%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/index.html">
 <meta property="og:site_name" content="Chan DH&#39;s Blog">
-<meta property="og:description" content="list –&gt; string1234567list_  &#x3D; [1,2,3,4,5]str_1 &#x3D; &quot;&quot;.join(list_)str_2 &#x3D; &quot;.&quot;.join(list_)str_2 &#x3D; &quot; &quot;.join(list_)print(str_1, str_2, str_3) 运行结果：  “12345”, “1.2.3.4.5”, “1">
+<meta property="og:description" content="list –&gt; string">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-01-07T06:20:04.000Z">
-<meta property="article:modified_time" content="2022-01-07T07:24:53.007Z">
+<meta property="article:modified_time" content="2022-01-08T04:09:21.109Z">
 <meta property="article:author" content="Chan DH">
 <meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
@@ -146,7 +146,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -216,10 +216,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2022-01-07 14:20:04 / 修改时间：15:24:53" itemprop="dateCreated datePublished" datetime="2022-01-07T14:20:04+08:00">2022-01-07</time>
+      <time title="创建时间：2022-01-07 14:20:04" itemprop="dateCreated datePublished" datetime="2022-01-07T14:20:04+08:00">2022-01-07</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2022-01-08 12:09:21" itemprop="dateModified" datetime="2022-01-08T12:09:21+08:00">2022-01-08</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -255,7 +261,9 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="list-–-gt-string"><a href="#list-–-gt-string" class="headerlink" title="list –&gt; string"></a>list –&gt; string</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">list_  = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"></span><br><span class="line">str_1 = <span class="string">&quot;&quot;</span>.join(list_)</span><br><span class="line">str_2 = <span class="string">&quot;.&quot;</span>.join(list_)</span><br><span class="line">str_2 = <span class="string">&quot; &quot;</span>.join(list_)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(str_1, str_2, str_3)</span><br></pre></td></tr></table></figure>
+        <h2 id="list-–-gt-string"><a href="#list-–-gt-string" class="headerlink" title="list –&gt; string"></a>list –&gt; string</h2><span id="more"></span>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">list_  = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"></span><br><span class="line">str_1 = <span class="string">&quot;&quot;</span>.join(list_)</span><br><span class="line">str_2 = <span class="string">&quot;.&quot;</span>.join(list_)</span><br><span class="line">str_2 = <span class="string">&quot; &quot;</span>.join(list_)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(str_1, str_2, str_3)</span><br></pre></td></tr></table></figure>
 <p>运行结果：</p>
 <blockquote>
 <p>“12345”, “1.2.3.4.5”, “1 2 3 4 5”</p>
