@@ -192,4 +192,105 @@
         <tag>LeetCode每日一题</tag>
       </tags>
   </entry>
+  <entry>
+    <title>LeetCode数据结构入门</title>
+    <url>/2022/01/19/LeetCode%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[<h1 id="数据结构-入门"><a href="#数据结构-入门" class="headerlink" title="数据结构 入门"></a>数据结构 入门</h1><span id="more"></span>
+
+<h2 id="1数组"><a href="#1数组" class="headerlink" title="1数组"></a>1数组</h2><ol start="217">
+<li> 存在重复元素</li>
+<li>最大子数组和</li>
+</ol>
+<h2 id="2数组"><a href="#2数组" class="headerlink" title="2数组"></a>2数组</h2><ol>
+<li><p>两数之和</p>
+</li>
+<li><p>合并两个有序数组</p>
+</li>
+</ol>
+<h2 id="3数组"><a href="#3数组" class="headerlink" title="3数组"></a>3数组</h2><ol start="350">
+<li><p>两个数组的交集</p>
+</li>
+<li><p>买股票的最佳时机</p>
+</li>
+</ol>
+<h2 id="4数组"><a href="#4数组" class="headerlink" title="4数组"></a>4数组</h2><ol start="566">
+<li><p>重塑矩阵</p>
+</li>
+<li><p>杨辉三角</p>
+</li>
+</ol>
+<h2 id="5数组"><a href="#5数组" class="headerlink" title="5数组"></a>5数组</h2><ol start="36">
+<li><p>有效数组</p>
+</li>
+<li><p>矩阵置零</p>
+</li>
+</ol>
+<h2 id="6字符串"><a href="#6字符串" class="headerlink" title="6字符串"></a>6字符串</h2><ol start="387">
+<li><p>字符串中的第一个唯一字符</p>
+</li>
+<li><p>赎金信</p>
+</li>
+<li><p>有效的字母位词</p>
+</li>
+</ol>
+<h2 id="7链表"><a href="#7链表" class="headerlink" title="7链表"></a>7链表</h2><ol start="141">
+<li><p>环形链表</p>
+</li>
+<li><p>合并两个有序链表</p>
+</li>
+<li><p>移除链表元素</p>
+</li>
+</ol>
+<h2 id="8链表"><a href="#8链表" class="headerlink" title="8链表"></a>8链表</h2><ol start="206">
+<li><p>反转链表</p>
+</li>
+<li><p>删除排序链表中的重复元素</p>
+</li>
+</ol>
+<h2 id="9-栈-队列"><a href="#9-栈-队列" class="headerlink" title="9 栈/队列"></a>9 栈/队列</h2><ol start="20">
+<li><p>有效的括号</p>
+</li>
+<li><p>用栈实现队列</p>
+</li>
+</ol>
+<h2 id="10树"><a href="#10树" class="headerlink" title="10树"></a>10树</h2><ol start="144">
+<li><p>二叉树的前序遍历</p>
+</li>
+<li><p>二叉树的中序遍历</p>
+</li>
+<li><p>二叉树的后续遍历</p>
+</li>
+</ol>
+<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><ol start="102">
+<li><p>二叉树的层序遍历</p>
+</li>
+<li><p>二叉树的最大深度</p>
+</li>
+<li><p>对称二叉树</p>
+</li>
+</ol>
+<h2 id="树-1"><a href="#树-1" class="headerlink" title="树"></a>树</h2><ol start="700">
+<li><p>二叉搜索树中的遍历</p>
+</li>
+<li><p>二叉搜索树的插入操作</p>
+</li>
+</ol>
+<h2 id="树-2"><a href="#树-2" class="headerlink" title="树"></a>树</h2><ol start="98">
+<li><p>验证二叉搜索树</p>
+</li>
+<li><p>两数之后5-输入BST</p>
+</li>
+<li><p>二叉搜索树的最近公共祖先</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>LeetCode</category>
+        <category>数据结构</category>
+      </categories>
+      <tags>
+        <tag>LeetCode</tag>
+        <tag>数据结构</tag>
+      </tags>
+  </entry>
 </search>
