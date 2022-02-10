@@ -131,7 +131,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -142,7 +142,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -179,6 +179,112 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://chan-dh.github.io/2022/02/10/gcd/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Chan DH">
+      <meta itemprop="description" content="与其临渊羡鱼，不如退而结网">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chan DH's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/02/10/gcd/" class="post-title-link" itemprop="url">gcd</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-02-10 21:14:49 / 修改时间：21:54:41" itemprop="dateCreated datePublished" datetime="2022-02-10T21:14:49+08:00">2022-02-10</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>921</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="Leetcode-1447-最简分数"><a href="#Leetcode-1447-最简分数" class="headerlink" title="Leetcode 1447. 最简分数"></a>Leetcode 1447. 最简分数</h2><blockquote>
+<p>给定一个数子<em><strong>n</strong></em>, 找出最简分数，即 <em><strong>分子</strong></em> <em><strong>分母</strong></em> 的最大公约数是1</p>
+</blockquote>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">new_gcd</span>(<span class="params">self, num1, num2</span>):</span></span><br><span class="line">        <span class="keyword">if</span> (num1 == num2):</span><br><span class="line">            <span class="keyword">return</span> num1</span><br><span class="line">        <span class="keyword">elif</span> (num1 &gt; num2):</span><br><span class="line">            <span class="keyword">return</span> gcd(num1-num2, num2)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> gec(num2-num1, num1)</span><br><span class="line">    </span><br><span class="line">        </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">simplifiedFractions</span>(<span class="params">self, n: <span class="built_in">int</span></span>) -&gt; <span class="type">List</span>[<span class="built_in">str</span>]:</span></span><br><span class="line">        ans = <span class="built_in">list</span>()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>, n+<span class="number">1</span>):</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,i+<span class="number">1</span>):</span><br><span class="line">                <span class="comment"># 可以使用 python 自带的函数 gcd()</span></span><br><span class="line">                <span class="comment"># if (gec(i, j) == 1):</span></span><br><span class="line">                <span class="keyword">if</span> (self.new_gcd(i, j) == <span class="number">1</span>):</span><br><span class="line">                    str_ = <span class="built_in">str</span>(j) + <span class="string">&#x27;/&#x27;</span> + <span class="built_in">str</span>(i)</span><br><span class="line">                    ans.append(str_)</span><br><span class="line">        <span class="keyword">return</span> ans</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h3><p>时间复杂度： <em><strong>O</strong></em> (n2log2n)</p>
+<p>空间复杂度： <em><strong>O</strong></em> (1)</p>
+<h2 id="两种实现GCD（最大公约数）"><a href="#两种实现GCD（最大公约数）" class="headerlink" title="两种实现GCD（最大公约数）"></a>两种实现GCD（最大公约数）</h2><h3 id="方法一：更相减损法"><a href="#方法一：更相减损法" class="headerlink" title="方法一：更相减损法"></a>方法一：更相减损法</h3><blockquote>
+<p>两个正整数a和b（a&gt;b），它们的最大公约数等于a-b的差值c和较小数b的最大公约数。</p>
+</blockquote>
+<blockquote>
+<p>避免了大整数取模导致效率低下，但是运算次数要比辗转相除多得多，所以在使用的时候需要判断。</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">gcd</span> (<span class="params">num1, num2</span>):</span></span><br><span class="line">    <span class="keyword">if</span> (num1 == num2):</span><br><span class="line">        <span class="keyword">return</span> num1</span><br><span class="line">    <span class="keyword">elif</span> (num1 &gt; num2):</span><br><span class="line">        <span class="keyword">return</span> gcd(num1-num2, num2)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> gec(num2-num1, num1)</span><br></pre></td></tr></table></figure>
+
+<h3 id="方法二：辗转相除法"><a href="#方法二：辗转相除法" class="headerlink" title="方法二：辗转相除法"></a>方法二：辗转相除法</h3><blockquote>
+<p>两个正整数a和b（a&gt;b），它们的最大公约数等于a除以b的余数c和b之间的最大公约数。</p>
+</blockquote>
+<blockquote>
+<p>其实就是把更相减损变得更高级一点（加减运算变乘除运算，提升了一个级别）</p>
+</blockquote>
+<blockquote>
+<p>但是大整数取模会让一些题极为头疼，所以我们还是要慎重考虑什么时候用更相减损什么时候用辗转相除。</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">gcd</span> (<span class="params">num1, num2</span>):</span></span><br><span class="line">    <span class="keyword">if</span> (num2 == <span class="number">0</span>):</span><br><span class="line">        <span class="keyword">return</span> num1</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> gcd(num2, num1%num2)</span><br></pre></td></tr></table></figure>
+
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -839,11 +945,11 @@
         </span>
           ，
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">数据结构与算法</span></a>
+          <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
         </span>
           ，
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+          <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">数据结构与算法</span></a>
         </span>
     </span>
 
@@ -949,11 +1055,11 @@
         </span>
           ，
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">数据结构与算法</span></a>
+          <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
         </span>
           ，
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+          <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">数据结构与算法</span></a>
         </span>
     </span>
 
@@ -1115,14 +1221,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">7k</span>
+    <span title="站点总字数">8k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">7 分钟</span>
+    <span title="站点阅读时长">8 分钟</span>
   </span>
 </div>
 
